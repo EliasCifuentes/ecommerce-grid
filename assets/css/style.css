@@ -52,7 +52,6 @@
 
     grid-template-rows: 40px calc(100vh - 40px - 40px) 40px;
     grid-template-columns: auto;
-
 }
 
 .principal {
@@ -79,8 +78,32 @@
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     color: rgb(237, 241, 245);
-  
 }
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    margin: 2px;
+}
+
+.categorias h4{
+    margin: 2px 0 4px 0;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.marca {
+    display: flex;
+    padding-left: 20px;
+    gap: 5px;
+}
+
+.marca > .cantidad{
+    color: rgb(131, 130, 130);
+}
+
 
 .pie-pagina {
     display: flex;
