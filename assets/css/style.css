@@ -1,0 +1,61 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    border: solid black 1px;
+}
+
+.box2 {
+    border: solid red 1px;
+}
+
+/* Divisiones de la pagina */
+
+.cabecera {
+    grid-area: header;
+}
+
+.pincipal {
+    grid-area: main;
+}
+
+.categoria {
+    grid-area: aside;
+}
+
+.productos {
+    grid-area: section;
+}
+
+.pie-pagina {
+    grid-area: footer;
+}
+
+/* Contenedores Grid*/
+
+.contenedor {
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    grid-template-rows: 400px calc(100vh - 40px - 40px) 40px;
+    grid-template-columns: auto;
+
+}
+
+.principal {
+    display: grid;
+    height: 350px;
+    grid-template-areas: 
+    'aside section'
+    'aside section'
+    ;
+
+    grid-template-columns: 20% 80%;
+}
+
